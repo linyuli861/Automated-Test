@@ -1,31 +1,20 @@
-# coding=utf-8
-import HTMLTestRunner
 import unittest
-import os,time
+import HTMLTestRunner
+import time
 
 
-listaa = "./report/"
+def get_test_cases(dirpath):
+    test_cases = unittest.TestSuite()
+    suites = unittest.defaultTestLoader.discover(dirpath, 'test_*.py', top_level_dir=dirpath)
+    for suite in suites:
+        test_cases.addTests(suite)
+    return test_cases
 
 
-def createsuite():
-    testunit=unittest.TestSuite()
-    discover=unittest.defaultTestLoader.discover(listaa,pattern='test_*.py',top_level_dir=None)
-    for test_suite in discover:
-        for test_case in test_suite:
-            testunit.addTests(test_case)
-            print(testunit)
-    return testunit
-
-
-now = time.strftime("%Y-%m-%d %H_%M_%S",time.localtime())
-filename="./report/"+now+"_result.html"
-fp=open(filename, 'wb')
-
-runner=HTMLTestRunner.HTMLTestRunner(
-    stream=fp,
-    title=u'搜索功能测试报告',
-    description=u'用例执行情况：')
-
-runner.run(createsuite())
-
-fp.close()
+if __name__ == '__main__':
+    cases = get_test_cases('../testcase')
+    now = time.strftime("%Y-%m-%d %H_%M_%S")
+    filename = '../report/' + now + 'report.html'  # 设置报告文件名
+    f = open(filename, 'wb')
+    runner = HTMLTestRunner.HTMLTestRunner(stream=f, title=u'TEST', description=u'详细测试结果如下:')
+    runner.run(cases)

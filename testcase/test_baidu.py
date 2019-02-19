@@ -35,15 +35,16 @@ class TestLogin(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    now = time.strftime("%Y-%m-%d-%H-%M-%S")
-    suite = unittest.TestSuite()
-    suite.addTest(TestLogin("test_search"))
-    suite.addTest(TestLogin("test_search1"))
-    suite.addTest(TestLogin("test_search2"))
-    path = "../report/" + now + "result.html"
-    fp = open(path, 'wb')
-
-    runner = HTMLTestRunner(stream=fp, title=u"Web页面自动化测试", description=u"测试查询功能")
-    runner.run(suite)
-    fp.close()
+    # now = time.strftime("%Y-%m-%d-%H-%M-%S")
+    # suite = unittest.TestSuite()
+    # suite.addTest(TestLogin("test_search"))
+    # suite.addTest(TestLogin("test_search1"))
+    # suite.addTest(TestLogin("test_search2"))
+    # path = "../report/" + now + "result.html"
+    # fp = open(path, 'wb')
+    #
+    # runner = HTMLTestRunner(stream=fp, title=u"Web页面自动化测试", description=u"测试查询功能")
+    # runner.run(suite)
+    # fp.close
+    unittest.main()
 
