@@ -13,9 +13,9 @@ python3+Selenium+unittest自动化UI测试框架
     通过主从服务器执行测试
     
 测试代码结构:
+![](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/image/1.png)
 
-
-    
+    g
  
  
 
