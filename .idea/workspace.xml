@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09a4aeb4-cd0a-454b-9878-fc6edee9400a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/z-README-image/structure.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/z-README-image/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/image/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/z-README-image/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +46,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="209">
-                <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+                <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -155,6 +156,11 @@
               <item name="Automated-Test" type="b2602c69:ProjectViewProjectNode" />
               <item name="Automated-Test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Automated-Test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automated-Test" type="462c0819:PsiDirectoryNode" />
+              <item name="z-README-image" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -170,6 +176,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\githublily\Automated-Test\z-README-image" />
       <recent name="D:\githublily\Automated-Test\image" />
       <recent name="D:\githublily\Automated-Test\file" />
       <recent name="D:\githublily\Automated-Test" />
@@ -315,8 +322,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3292683" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3292683" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25383994" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3292683" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25383994" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
@@ -614,11 +621,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/z-README-image/structure.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="209">
-            <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           </first_editor>
           <second_editor />
         </state>
