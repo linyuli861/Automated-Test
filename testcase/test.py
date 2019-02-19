@@ -1,5 +1,4 @@
 # coding=utf-8
-
 from HTMLTestRunner import HTMLTestRunner
 from selenium import webdriver
 import time
@@ -26,7 +25,13 @@ class TestLogin(unittest.TestCase):
         self.driver.find_element_by_id("kw").send_keys("hello")
         self.driver.find_element_by_id("su").click()
         time.sleep(2)
-        self.assertIn("hello", self.driver.page_source)
+        self.assertIn("hello1232323", self.driver.page_source)
+
+    def test_search2(self):
+        self.driver.find_element_by_id("k").send_keys("hello")
+        self.driver.find_element_by_id("su").click()
+        time.sleep(2)
+        self.assertIn("hello1232323", self.driver.page_source)
 
 
 if __name__ == '__main__':
@@ -34,10 +39,11 @@ if __name__ == '__main__':
     suite = unittest.TestSuite()
     suite.addTest(TestLogin("test_search"))
     suite.addTest(TestLogin("test_search1"))
+    suite.addTest(TestLogin("test_search2"))
     path = "../report/" + now + "result.html"
     fp = open(path, 'wb')
 
-    runner = HTMLTestRunner(stream=fp, title=u"自动化测试", description=u"测试")
+    runner = HTMLTestRunner(stream=fp, title=u"Web页面自动化测试", description=u"测试查询功能")
     runner.run(suite)
     fp.close()
 

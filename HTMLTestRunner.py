@@ -291,15 +291,18 @@ h1 {
 	color: gray;
 }
 .heading {
+    font-size: 12px;
     margin-top: 0ex;
     margin-bottom: 1ex;
 	margin-left: 10px;
 }
 .heading .attribute {
+    font-size: 12px;
     margin-top: 1ex;
     margin-bottom: 0;
 }
 .heading .description {
+    font-size: 12px;
     margin-top: 4ex;
     margin-bottom: 6ex;
 }
@@ -317,7 +320,7 @@ a.popup_link:hover {
     /*border: solid #627173 1px; */
     font-family: "Lucida Console", "Courier New", Courier, monospace;
     text-align: left;
-    font-size: 8pt;
+    font-size: 12pt;
     width: 500px;
 }
 }
@@ -334,7 +337,7 @@ a.popup_link:hover {
     margin-left: 10px;
 }
 #header_row {
-    font-weight: bold;
+    font-weight: bold;T
     color: #606060;
     background-color: #f5f5f5;
     border-top-width: 10px;
@@ -342,6 +345,7 @@ a.popup_link:hover {
 	font-size: 12px;
 }
 #result_table td {
+    font-size:10px
     border: 1px solid #f5f5f5;
     padding: 2px;
 }
@@ -358,20 +362,20 @@ a.popup_link:hover {
 #ending {
 }
 /* -- chars ---------------------------------------------------------------------- */
-.testChars {margin-left: 150px;}
+.testChars {margin-left: 150px; font-size:10px; text-align:center;}
 .btn-info1 {
     color: #fff;
-    background-color: #d6e9c6;
+    background-color: #28B463;
     border-color: #d6e9c6;
 }
 .btn-info2 {
     color: #fff;
-    background-color: #faebcc;
+    background-color: #D4AC0D;
     border-color: #faebcc;
 }
 .btn-info3 {
     color: #fff;
-    background-color: #ebccd1;
+    background-color: #D35400;
     border-color: #ebccd1;
 }
 </style>
@@ -388,13 +392,14 @@ a.popup_link:hover {
 %(parameters)s
 <p class='description'>%(description)s</p>
 </div>
-<div style="float:left; margin-left: 10px;">
+<div style="float:left; margin-left: 10px; font-size:12px">
 	<p> Test Case Pie charts </p>
 	<a class="btn btn-xs btn-info1">-Pass-</a><br>
 	<a class="btn btn-xs btn-info2">-Faild-</a><br>
 	<a class="btn btn-xs btn-info3">-Error-</a><br>
 </div>
-<div class="testChars">
+
+<div class="testChars" style="center">
 	<canvas id="myChart" width="250" height="250"></canvas>
 </div>
 """ # variables: (title, parameters, description)
@@ -408,23 +413,26 @@ a.popup_link:hover {
     ECHARTS_SCRIPT = """
     <script type="text/javascript">
 var data = [
-	{
+	{   
+	    name: 'error',
 		value: %(error)s,
-		color: "#ebccd1",
+		color: "#D35400",
 		label: "Error",
 		labelColor: 'white',
 		labelFontSize: '16'
 	},
 	{
+	    name: 'fail',
 		value : %(fail)s,
-		color : "#faebcc",
+		color : "#D4AC0D",
 		label: "Fail",
 		labelColor: 'white',
 		labelFontSize: '16'
 	},
 	{
+	    name : 'pass',
 		value : %(Pass)s,
-		color : "#d6e9c6",
+		color : "#28B463",
 		label : "Pass",
 		labelColor: 'white',
 		labelFontSize: '16'
@@ -451,7 +459,7 @@ var myNewChart = new Chart(ctx).Pie(data,newopts);
     #
 
     REPORT_TMPL = """
-<p id='show_detail_line' style="margin-left: 10px;">Show
+<p id='show_detail_line' style="margin-left: 16px; font-size:12px">Show
 <a href='javascript:showCase(0)' class="btn btn-xs btn-primary">Summary</a>
 <a href='javascript:showCase(1)' class="btn btn-xs btn-danger">Failed</a>
 <a href='javascript:showCase(2)' class="btn btn-xs btn-info">All</a>
