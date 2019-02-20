@@ -34,6 +34,11 @@ python3+Selenium+unittest自动化UI测试框架
 
 ![](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/report.png)
 
+调用common中的sendEmail，向指定邮箱发送最新的测试报告文件
+
+发送邮件如下所示：
+
+![](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/email.jpg)
 
 
  
