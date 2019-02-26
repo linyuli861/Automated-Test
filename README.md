@@ -30,17 +30,17 @@ python3+Selenium+unittest+HTMLTestRunner+pageObject  Web自动化测试框架
 
 * run.py 执行run.py文件可以执行全部测试用例
 
-###生成的测试报告例子如下所示
+### 生成的测试报告例子如下所示
 
 ![](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/report.png)
 
-###发送邮件如下所示：
+### 发送邮件如下所示：
 调用common中的sendEmail，向指定邮箱发送最新的测试报告文件
 
 ![](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/email.jpg)
 
 
-###PageObject设计模式
+### PageObject设计模式
 由于Web页面自动化测试的过程中会存在许多重复的元素，且很多Web页面测试的元素值不稳定，经常变更，
 为了使得Web页面自动化测试的代码更具有健壮性，因此使用PageObject设计模式，
 将web自动化测试的测试用例和测试用例中需要使用到的元素解耦。
