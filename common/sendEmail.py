@@ -1,4 +1,13 @@
 # email：3381350680@qq.com password：abc123456
+"""
+使用一个邮箱向另一个邮箱发送测试报告的html文件，这里需要对发送邮件的邮箱进行设置，获取邮箱授权码。
+username=“发送邮件的邮箱”， password=“邮箱授权码”
+这里要特别注意password不是邮箱密码而是邮箱授权码。
+
+mail_server = "发送邮箱的服务器地址"
+这里常用的有 qq邮箱——"stmp.qq.com", 163邮箱——"stmp.163.com"
+其他邮箱可自行百度
+"""
 import os
 import smtplib
 from email.mime.text import MIMEText
