@@ -1,4 +1,4 @@
-# email：3381350680@qq.com password：abc123456
+# email：3381350680@qq.com password：***
 """
 使用一个邮箱向另一个邮箱发送测试报告的html文件，这里需要对发送邮件的邮箱进行设置，获取邮箱授权码。
 username=“发送邮件的邮箱”， password=“邮箱授权码”
@@ -6,7 +6,8 @@ username=“发送邮件的邮箱”， password=“邮箱授权码”
 
 mail_server = "发送邮箱的服务器地址"
 这里常用的有 qq邮箱——"stmp.qq.com", 163邮箱——"stmp.163.com"
-其他邮箱可自行百度
+其他邮箱服务器地址可自行百度
+
 """
 import os
 import smtplib
@@ -32,18 +33,18 @@ class SendEmail():
         subject = 'web自动化测试报告测试报告' + now
         # 发件人的邮箱及邮箱授权码
         username = '3381350680@qq.com'
-        password = '**'  # 注意这里是邮箱的授权码而不是邮箱密码
+        password = '***'  # 注意这里是邮箱的授权码而不是邮箱密码
         # 邮箱的内容和标题
         message = MIMEText(mail_body, 'html', 'utf8')
         message['Subject'] = Header(subject, charset='utf8')
-        # 发送邮件
+        # 发送邮件，使用的使smtp协议
         smtp = smtplib.SMTP()
         smtp.connect(mail_server)
         smtp.login(username, password)
         smtp.sendmail(send_addr, reciver_addr.split(','), message.as_string())
         smtp.quit()
 
-    # 获取最新报告的地址
+    # 获取最新的测试报告地址
     def acquire_report_address(self, reports_address):
         # 测试报告文件夹中的所有文件加入到列表
         test_reports_list = os.listdir(reports_address)

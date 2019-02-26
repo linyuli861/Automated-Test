@@ -23,6 +23,7 @@ class TestLogin(unittest.TestCase):
         self.page.search = self.page.search_content
         self.page.search_btn.click()
         time.sleep(2)
+        # 断言
         self.assertIn(self.page.search_content_assert, self.driver.page_source)
 
         # # 未使用pageObject模式时的web页面自动化测试代码
@@ -59,7 +60,7 @@ class TestLogin(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    # 当没有run.py是可以单独使用以下语句生成测试报告
+    # 使用以下语句生成本页面的测试报告
     # now = time.strftime("%Y-%m-%d-%H-%M-%S")
     # suite = unittest.TestSuite()
     # suite.addTest(TestLogin("test_search"))

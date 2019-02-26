@@ -4,7 +4,7 @@ from common.url import *
 
 class SearchPage(PageObject):
 
-    # 测试网址
+    # 当前测试页面的测试网址url
     base_url = Url.base_url
     url = base_url+'/'
 
