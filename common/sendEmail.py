@@ -1,6 +1,4 @@
 # email：3381350680@qq.com password：abc123456
-
-
 import os
 import smtplib
 from email.mime.text import MIMEText
@@ -47,8 +45,4 @@ class SendEmail():
         # 最新的测试报告地址
         the_last_report_address = os.path.join(reports_address, the_last_report)
         return the_last_report_address
-
-
-
-
 
