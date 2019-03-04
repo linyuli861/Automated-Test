@@ -39,7 +39,6 @@ python3+Selenium+unittest+HTMLTestRunner+pageObject  Web自动化测试框架
 
 ![](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/email.jpg)
 
-
 ### PageObject设计模式
 由于Web页面自动化测试的过程中会存在许多重复的元素，且很多Web页面测试的元素值不稳定，经常变更，
 为了使得Web页面自动化测试的代码更具有健壮性，因此使用PageObject设计模式，
