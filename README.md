@@ -14,7 +14,7 @@ python3+Selenium+unittest+HTMLTestRunner+pageObject  Web自动化测试框架
     
 ### 测试代码结构:
 
-![](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/structure.png)
+![Image text](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/report.png)
 
 * common文件夹存放公有元素，如url，测试报告发送邮件地址，使用信息等；
 
@@ -32,12 +32,12 @@ python3+Selenium+unittest+HTMLTestRunner+pageObject  Web自动化测试框架
 
 ### 生成的测试报告例子如下所示
 
-![](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/report.png)
+![Image text](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/structure.png)
 
 ### 发送邮件如下所示：
 调用common中的sendEmail，向指定邮箱发送最新的测试报告文件
 
-![](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/email.jpg)
+![Image text](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/email.jpg)
 
 ### PageObject设计模式
 由于Web页面自动化测试的过程中会存在许多重复的元素，且很多Web页面测试的元素值不稳定，经常变更，
