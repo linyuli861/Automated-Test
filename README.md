@@ -14,7 +14,7 @@ python3+Selenium+unittest+HTMLTestRunner+pageObject  Web自动化测试框架
     
 ### 测试代码结构:
 
-![Image text](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/report.png)
+![Image text](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/structure.png)
 
 * common文件夹存放公有元素，如url，测试报告发送邮件地址，使用信息等；
 
@@ -32,7 +32,7 @@ python3+Selenium+unittest+HTMLTestRunner+pageObject  Web自动化测试框架
 
 ### 生成的测试报告例子如下所示
 
-![Image text](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/structure.png)
+![Image text](https://raw.githubusercontent.com/linyuli861/Automated-Test/master/z-README-image/report.png)
 
 ### 发送邮件如下所示：
 
